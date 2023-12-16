@@ -1,0 +1,52 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static '/css/navbar.css' %}">
+
+<nav>
+    <div class="navbar-container">
+        <div class='navbar-nav_logo'>
+            <a href="/">
+                <img src="{% static "/images/arvi-law2.png" %}" alt="">
+                
+            </a>
+        </div>
+        <div class='navbar-nav_items'>
+            <ul class='navbar-list_items'>
+                <li class="navbar-item ">
+                    <a href="/">Home</a>
+                </li>
+                <li class="navbar-item ">   
+                    <a href="">Our Team</a>
+                </li>
+                <li class="navbar-item ">
+                    <a href="">Services</a>
+                </li>
+                <li class="navbar-item ">
+                    <a href="">About Us</a>
+                </li>
+                <li class="navbar-item ">
+                    <a href="">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-toggle">
+            <button id="navbar-toggle-button">&#9776;</button>
+        </div>
+    </div>
+</nav>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".navbar-nav_items ul li a").click(function () {
+            $(".navbar-nav_items ul li").removeClass("active");
+            $(this).parent().addClass("active");
+        });
+    
+        $("#navbar-toggle-button").click(function () {
+            $(".navbar-nav_items ul").toggleClass("show");
+        });
+    });
+    
+</script>
