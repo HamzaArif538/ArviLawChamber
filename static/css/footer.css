@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,12 +10,11 @@
     margin-top: 200px;
     display: flex;
     justify-content: space-evenly;
-    /* align-items: center; */
     height: auto;
     padding:20px 0 20px 60px;
-    /* background: linear-gradient(to top, #003d58,#016b9c); */
-    background: black;
-    color: #fff;
+    background: #121518;
+    color: #999999;
+    
 
 }
 
@@ -25,9 +26,11 @@
 }
 
 .footer-title{
-    color: rgb(226, 168, 22);
+    color: #aa9166;
     margin-bottom: 20px;
     margin-top: 20px;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
 }
 
 #contactUs{
@@ -35,11 +38,12 @@
 }
 
 #contactUs .footer-title{
-    color: #fff;
+    color: #aa9166;
 }
 
 #contactUs .footer-cont{
-    color: #dfdcdc;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
 }
 
 #contactUs .footer-cont .footer-lines .footer-line .footer-icon{
@@ -49,7 +53,8 @@
 
 #contactUs .footer-cont .footer-lines .footer-line-main a{
     text-decoration: none;
-    color: #dfdcdc;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
 }
 
 #contactUs .footer-cont .footer-lines  .footer-line-main:hover{
@@ -59,7 +64,8 @@
 
 .footer-cont .footer-about-p{
     font-size:13px;
-    color: #f7f7f7;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer-lines{
@@ -86,7 +92,7 @@
 
 #social li a{
     text-decoration: none;
-    color: #fff;
+    color: #aa9166;
     margin-right: 35px;
     font-size: 20px;
     padding: 7px;
@@ -102,12 +108,11 @@
 }
 
 #social li a:hover{
-    background-color: white;
-    color: black;
+    color: #999999;
 }
 
 #explore .footer-title{
-    color: #fff;
+    color: #aa9166;
 }
 
 #explore .footer-cont ul{
@@ -125,7 +130,8 @@
 
 #explore .footer-cont ul .footer-link a{
     text-decoration: none;
-    color: #dfdcdc;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 768px) {

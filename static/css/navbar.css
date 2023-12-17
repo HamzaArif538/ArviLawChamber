@@ -9,7 +9,7 @@
 .navbar-container{
     display: flex;
     justify-content: space-evenly;
-    background-color: #fff;
+    background-color: #121518 !important;
     padding: 20px 0 20px 0;
     align-items: center;
     border: none;
@@ -19,18 +19,20 @@
     z-index: 1;
     width: 100%;
     margin:0 0 50px 0;
-    box-shadow: 1px 1px 5px 1px rgb(173, 173, 173);
+    box-shadow: 1px 1px 5px 1px rgb(17, 17, 17);
 }
 
 .navbar-nav_logo{
     height: 50px;
     overflow: hidden;
     /* background: blue; */
+    border-radius: 5px;
 }
 
 .navbar-nav_logo img{
-    height: 55px;
+    height: 50px;
     padding-bottom: 5px;
+    
 }
 
 .navbar-nav_items ul{
@@ -48,7 +50,7 @@
 
 .navbar-nav_items ul li a{
     text-decoration: none;
-    color: black;
+    color: #fff;
     transition: 0.5s;
     font-family: 'Poppins', sans-serif;
 }
@@ -60,16 +62,16 @@
 
 .mobile-menu{
     display: none;
-    background-color: #f8f8f8;
+    background-color: #121518 !important;
     padding: 20px;
 }
 
 .navbar-nav_items ul li a:hover{
-    color: #3876BF;
+    color: #b69d74;
     
 }
 .navbar-nav_items ul li.active a{
-    color: #3876BF;
+    color: #b69d74;
 }
 
 

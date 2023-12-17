@@ -2,8 +2,76 @@
 {% load static %}
 
 {% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="{% static "/css/home.css" %}">
 
-<h2>Homeeee</h2>
+<div class="homecontainer">
+    <div class="homeconttop">
+        <div class="hometopimg">
+            <div class="topimgcont">
+                <img src="{% static "/images/homeintro.jpg" %}" alt="">
+            </div>
+            <div class="topimginfo">
+                <p class="imginfohead">
+                    We Fight For Your Justice
+                </p>
+                <p class="imginfoinfo">
+                    Get In Contact With Us Right Now
+                </p>
+            </div>
+        </div>
+
+        <div class="hometopinfo">
+            <div class="topinfocont">
+                <div class="topinfocont-icon">
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="topinfocont-head">
+                    <h1>Legal</h1>
+                </div>
+                <div class="topinfocont-info">
+                    Govt Approved
+                </div>
+            </div>
+            <div class="topinfocont">
+                <div class="topinfocont-icon">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div class="topinfocont-head">
+                    <h1>Attorneys</h1>
+                </div>
+                <div class="topinfocont-info">
+                    Expert Attorneys
+                </div>
+            </div>
+            <div class="topinfocont">
+                <div class="topinfocont-icon">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                </div>
+                <div class="topinfocont-head">
+                    <h1>Success</h1>
+                </div>
+                <div class="topinfocont-info">
+                    99% Case Won
+                </div>
+            </div>
+            <div class="topinfocont">
+                <div class="topinfocont-icon">
+                    <i class="fa-regular fa-handshake"></i>
+                </div>
+                <div class="topinfocont-head">
+                    <h1>Support</h1>
+                </div>
+                <div class="topinfocont-info">
+                    Quick Support
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="homecontbottom">
+
+    </div>
+</div>
 
 
 {% endblock content %}
