@@ -212,3 +212,79 @@
     font-family: 'Roboto', sans-serif;
     margin: 5px 0 20px 0;
 }
+
+@media only screen and (max-width: 768px) {
+    .teamconttop .teamtophead {
+        font-size: 30px;
+    }
+
+    .teamconttop .teamtopinfo {
+        font-size: 16px;
+    }
+
+    .teamcontbottom .bottomaboutteam {
+        margin: 50px 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottomaboutteam .aboutteamleft {
+        margin-right: 0;
+    }
+
+    .aboutteamleft .teamleftcont {
+        width: 100%;
+        height: 250px;
+    }
+
+    .aboutteamright h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .aboutteamright .teamrightinfo {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .aboutteamright .teamrightmore {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .teamcontbottom .bottomteammember {
+        margin: 50px 10px;
+    }
+
+    .bottomteammember .teammembertitle h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .teammembercontainer .teammembercont {
+        margin: 15px 5px;
+    }
+
+    .teammembercont .membercontpic {
+        height: 200px;
+        width: 100%;
+    }
+
+    .membercontbottom .memberbottomnum {
+        width: 100%;
+        bottom: 0;
+    }
+
+    .memberbottomnum .teamnumber {
+        margin-left: 0;
+    }
+
+    .membercontbottom .memberbottomname a {
+        font-size: 18px;
+    }
+
+    .membercontbottom .memberbottomdesign p {
+        margin-bottom: 10px;
+    }
+}
