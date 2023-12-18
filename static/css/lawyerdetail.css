@@ -1,0 +1,181 @@
+
+
+.teamdetail{
+    margin-top: 90px;
+}
+
+.teamdetail .teamconttop{
+    background: #b69d74;
+    /* padding: 50px; */
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'EB Garamond', serif; */
+    padding: 30px 0;
+}
+
+.teamconttop .teamtophead{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #121518;
+}
+
+.teamconttop .teamtopinfo{
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.teamconttop .teamtopinfo a{
+    text-decoration: none;
+    color: #121518;
+    transition: 0.4s;
+}
+
+.teamconttop .teamtopinfo a:hover{
+    color: #fff;
+}
+
+.teamdetail .lawyerdetailcont{
+    margin: 50px;
+    border: 2px solid #121518;
+}
+
+.lawyerdetailcont .lawyerdetailhead{
+    display: flex;
+    justify-content: center;
+    color: #121518;
+    background-color: #b69d74;
+    padding: 5px 0;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.lawyerdetailcont .lawyerdetailhead h1{
+    font-family: 'EB Garamond', serif;
+}
+
+.lawyerdetailcont .lawyerdetailbody{
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.lawyerdetailbody .lawyerdetailleft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px;
+    border: 2px solid #121518;
+}
+
+.lawyerdetailleft .infolefttittle{
+    background-color: #b69d74;
+    color: #121518;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    border-bottom: 2px solid #121518;
+    /* margin-bottom: 15px; */
+}
+
+.lawyerdetailleft .infoleftpic{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    
+}
+
+.lawyerdetailleft .infoleftpic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.lawyerdetailleft .infoleftpic img:hover{
+    transform: scale(1.1);
+}
+
+.lawyerdetailright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px;
+    
+}
+
+.lawyerdetailright .inforighttitle{
+    background-color: #b69d74;
+    color: #121518;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    border: 2px solid #121518;
+}
+
+.lawyerdetailright .inforighttable{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 2px solid #121518;
+    border-left: 2px solid #121518;
+}
+
+.inforighttable table{
+    border: 1px solid rgb(209, 208, 208);
+    border-collapse: collapse;
+    color: rgb(128, 128, 128);
+    font-size: 14px;
+}
+
+.inforighttable table tr td{
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.inforighttable table tr:nth-child(odd){
+    background-color: rgb(241, 241, 241);
+}
+
+.inforighttable table tr td:nth-child(even){
+    font-weight: bold;
+}
+
+.lawyerdetailcontact{
+    background-color: #b69d74;
+    padding: 10px 0;
+    width: 100%;
+    border: 2px solid #121518;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #121518;
+    font-size: 20px;
+    transition: 0.4s;
+    align-items: center;
+}
+
+.lawyerdetailcontact i{
+    color: #121518;
+    font-size: 22px;
+    
+}
+.lawyerdetailcontact:hover{
+    color: #fff;
+}
+
+.lawyerdetailcontact .detailcontactchild{
+    margin: 0px 5px;
+}

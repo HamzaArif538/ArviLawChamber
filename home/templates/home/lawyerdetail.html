@@ -1,0 +1,77 @@
+{% extends "home/main.html" %}
+{% load static %}
+{% block title %}Team Detail - Arvi Law Chamber{% endblock title %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static "/css/lawyerdetail.css" %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<div class="teamdetail">
+    <div class="teamconttop">
+        <div class="teamtophead">
+            Lawyer Detail
+        </div>
+        <div class="teamtopinfo">
+            <a href="">Our Team</a>
+            /
+            <a href="">Lawyer Detail</a>
+        </div>
+    </div>
+    <div class="lawyerdetailcont">
+        <div class="lawyerdetailhead">
+            <h1>Contact With Our Lawyer Now!</h1>
+        </div>
+        <div class="lawyerdetailbody">
+            <div class="lawyerdetailleft">
+                <div class="infolefttittle">
+                    {{lawyer.name}}
+                </div>
+                <div class="infoleftpic">
+                    <img  src="{{lawyer.picture.url}}" alt="">
+                </div>
+            </div>
+            <div class="lawyerdetailright">
+                <div class="inforighttitle">
+                    {{lawyer.name}} Background
+                </div>
+                <div class="inforighttable">
+                    <table class="infotable" border=1>
+                        <tr>
+                            <td>Name</td>
+                            <td>{{lawyer.name}}</td>
+                        </tr>
+                        <tr>
+                            <td>Phone No</td>
+                            <td>+{{lawyer.phoneno}}</td>
+                        </tr>
+                        <tr>
+                            <td>Experience</td>
+                            <td>{{lawyer.experience}}</td>
+                        </tr>
+                        <tr>
+                            <td>Designation</td>
+                            <td>{{lawyer.designation}}</td>
+                        </tr>
+                        <tr>
+                            <td>Expertise</td>
+                            <td>{{lawyer.expertise}}</td>
+                        </tr>
+                        <tr>
+                            <td>Education</td>
+                            <td>{{lawyer.education}}</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <a class="lawyerdetailcontact" href="https://wa.me/923485310150" target='_blank'>
+                        <i class="detailcontactchild fa-brands fa-square-whatsapp"></i>
+                        <span class='detailcontactchild '>{{lawyer.phoneno}} </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

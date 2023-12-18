@@ -1,0 +1,86 @@
+{% extends "home/main.html" %}
+{% load static %}
+
+{% block title %}Our Team - Arvi Law Chamber{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="{% static "/css/team.css" %}">
+
+
+<div class="teamcontainer">
+    <div class="teamconttop">
+        <div class="teamtophead">
+            Our Team
+        </div>
+        <div class="teamtopinfo">
+            <a href="">Home</a>
+            /
+            <a href="">Our Team</a>
+        </div>
+    </div>
+
+    <div class="teamcontbottom">
+        <div class="bottomaboutteam">
+            <div class="aboutteamleft">
+                <div class="teamleftcont">
+                    <img src="{% static "/images/about.jpg" %}" alt="">
+                </div>
+            </div>
+            <div class="aboutteamright">
+                <h1 class="teamrighthead">
+                    About Our Team
+                </h1>
+                <div class="teamrightinfo">
+                    Our seasoned team of lawyers at Arvi Law Chamber 
+                    shows unparalleled dedication and expertise. 
+                    Renowned for their exceptional skills in criminal, 
+                    family, civil, labor, corporate, and real estate law, 
+                    our attorneys are committed to delivering outstanding 
+                    results. <br> <br>
+                    With a passion for justice, our legal experts 
+                    ensure thorough representation and personalized 
+                    solutions, following the highest standards of 
+                    professionalism and commitment to our clients' success.
+                </div>
+                <a href='{% url "home" %}' class="teamrightmore">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+        <div class="bottomteammember">
+            <div class="teammembertitle">
+                <h1>Meet Our Expert Lawyers</h1>
+            </div>
+            <div class="teammembercontainer">
+                {% for i in lawyer %}
+                    <div class="teammembercont">
+                        <div class="membercontpic">
+                            <a href="{% url "lawyer" pk_test=i.id %}">
+                                <img src="{{i.picture.url}}" alt="" class="memberpic">
+                            </a>
+                        </div>
+                        <div class="membercontbottom">
+                            <div class="memberbottomnum">
+                                <i class="teamnumber fa-solid fa-phone"></i>
+                                <a class="teamnumber" href="tel:+{{i.phoneno}}">+{{i.phoneno}}</a>
+                            </div>
+                            <div class="memberbottomname">
+                                <a href="{% url "lawyer" pk_test=i.id %}">{{i.name}}</a>
+                            </div>
+                            <div class="memberbottomdesign">
+                                <p>{{i.designation}} </p>
+                            </div>
+                        </div>
+                    </div>
+                
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock content %}

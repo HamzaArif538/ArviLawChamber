@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;500&display=swap');
+
+
+.teamcontainer{
+    margin-top: 90px;
+    width: 100%;
+}
+
+.teamcontainer .teamconttop{
+    background: #b69d74;
+    /* padding: 50px; */
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'EB Garamond', serif; */
+    padding: 30px 0;
+}
+
+.teamconttop .teamtophead{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #121518;
+}
+
+.teamconttop .teamtopinfo{
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.teamconttop .teamtopinfo a{
+    text-decoration: none;
+    color: #121518;
+    transition: 0.4s;
+}
+
+.teamconttop .teamtopinfo a:hover{
+    color: #fff;
+}
+
+.teamcontbottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.teamcontbottom .bottomaboutteam{
+    display: flex;
+    margin: 90px 110px;
+}
+
+.bottomaboutteam .aboutteamleft{
+    margin-right: 20px;
+}
+
+.aboutteamleft .teamleftcont{
+    width: 450px;
+    border: 9px solid black;
+    overflow:hidden;
+    height: 350px;
+}
+
+.teamleftcont img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bottomaboutteam .aboutteamright{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.aboutteamright h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    color: #121518;
+}
+
+.aboutteamright .teamrightinfo{
+    color: #666666;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.aboutteamright .teamrightmore{
+    margin-top: 15px;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #aa9166;
+    border: 2px solid #aa9166;
+    border-radius: 0;
+    background: #121518;
+    transition: .3s;
+    width:max-content ;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.aboutteamright .teamrightmore:hover{
+    background: #aa9166;
+    color: #121518;
+}
+
+
+.teamcontbottom .bottomteammember{
+    display: flex;
+    margin: 90px 110px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottomteammember .teammembertitle h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    color: #121518;
+}
+
+.bottomteammember .teammembercontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.teammembercontainer .teammembercont{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 30px 10px;
+}
+
+.teammembercontainer .teammembercont:hover .membercontbottom .memberbottomnum{
+    width: 250px;
+}
+
+.teammembercont .membercontpic{
+    height: 300px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.membercontpic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.teammembercont .membercontbottom{
+    background-color: #121518;
+    color: #999999;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.membercontbottom .memberbottomnum{
+    background-color: #aa9166;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 35px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.memberbottomnum .teamnumber{
+    text-decoration: none;
+    color: #121518;
+    font-weight: bold;
+    transition: 0.4s;
+    margin-left: 5px;
+}
+
+.memberbottomnum:hover .teamnumber{
+    color: #fff;
+}
+
+.membercontbottom .memberbottomname a{
+    text-decoration: none;
+    margin: 0px 0px 5px 0;
+    font-size: 21px;
+    font-weight: bold;
+    color: #aa9166;
+    font-family:'EB Garamond', serif;
+    font-style: italic;
+}
+
+.membercontbottom .memberbottomdesign p{
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0 20px 0;
+}
