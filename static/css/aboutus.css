@@ -1,0 +1,131 @@
+.aboutuscontainer{
+    margin-top: 90px;
+    width: 100%;
+}
+
+.aboutuscontainer .teamconttop{
+    background: #b69d74;
+    /* padding: 50px; */
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'EB Garamond', serif; */
+    padding: 30px 0;
+}
+
+.teamconttop .teamtophead{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #121518;
+}
+
+.teamconttop .teamtopinfo{
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.teamconttop .teamtopinfo a{
+    text-decoration: none;
+    color: #121518;
+    transition: 0.4s;
+}
+
+.teamconttop .teamtopinfo a:hover{
+    color: #fff;
+}
+
+.aboutcontbottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutcontbottom .bottomaboutteam{
+    display: flex;
+    margin: 90px 110px;
+}
+
+.bottomaboutteam .aboutteamleft{
+    margin-right: 20px;
+}
+
+.aboutteamleft .teamleftcont{
+    width: 450px;
+    border: 9px solid black;
+    overflow:hidden;
+    height: 350px;
+}
+
+.teamleftcont img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bottomaboutteam .aboutteamright{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.aboutteamright h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    color: #121518;
+}
+
+.aboutteamright .teamrightinfo{
+    color: #666666;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.aboutteamright .teamrightmore{
+    margin-top: 15px;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #aa9166;
+    border: 2px solid #aa9166;
+    border-radius: 0;
+    background: #121518;
+    transition: .3s;
+    width:max-content ;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.aboutteamright .teamrightmore:hover{
+    background: #aa9166;
+    color: #121518;
+}
+
+.aboutcontbottom .aboutmap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 1px black;
+    width: 85vw;
+}
+
+.aboutmap .about-map{
+    border-radius: 10px;
+    width: 85vw;
+}

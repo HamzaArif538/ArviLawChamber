@@ -139,3 +139,108 @@
     transition: 0.5s;
     cursor: pointer;
 }
+
+/* Why Choose Us Style */
+
+
+.serviceconttrust{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0px 40px 0;
+}
+
+.serviceconttrust .servicetrustleft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trustleftcontainer .trustleftdata:hover .trustdataconticon i{
+    margin-left: 20px;
+}
+
+.servicetrustleft .trustlefttop h1{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    color: #121518;
+    font-size: 50px;
+    margin-bottom: 45px;
+}
+
+.servicetrustleft .trustleftcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.trustleftcontainer .trustleftdata{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.trustleftdata .trustdataconticon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121518;
+    height: 180px;
+    width: 250px;
+    
+}
+
+.trustdataconticon i{
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+    padding: 7px 7px;
+    color: #aa9166;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    position: relative;
+}
+
+.trustleftdata .trustdatacontinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    flex-wrap: wrap;
+    margin: 0 30px;
+}
+
+.trustdatacontinfo .trustcontinfohead h2{
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #121518;
+}
+
+.trustdatacontinfo .trustcontinfodata p{
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+}
+
+.serviceconttrust .servicetrustright{
+    background-color: aqua;
+}
+
+.servicetrustright .trustrightpiccont{
+    height: 740px;
+    width: 450px;
+    overflow: hidden;
+    border: 10px solid #121518;
+}
+
+.trustrightpiccont img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

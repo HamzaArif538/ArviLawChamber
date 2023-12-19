@@ -19,3 +19,7 @@ def lawyerdetail(request, pk_test):
 
 def services(request):
     return render(request, 'home/services.html')
+
+
+def aboutus(request):
+    return render(request, 'home/aboutus.html')
