@@ -7,4 +7,5 @@ urlpatterns = [
     path('lawyerdetail/<str:pk_test>/', views.lawyerdetail, name='lawyer'),
     path('services/', views.services, name='services'),
     path('aboutus/', views.aboutus, name='aboutus'),
+    path('contactus/', views.contactus, name='contactus'),
 ]

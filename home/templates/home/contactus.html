@@ -1,0 +1,87 @@
+{% extends "home/main.html" %}
+{% load static %}
+
+{% block title %}Contact Us - Arvi Law Chamber{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "/css/contactus.css" %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<div class="contactuscontainer">
+    <div class="teamconttop">
+        <div class="teamtophead">
+            Contact
+        </div>
+        <div class="teamtopinfo">
+            <a href="/">Home</a>
+            /
+            <a href="">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="contactcontbottom">
+        <div class="contactconthead">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="contactcontinfo">
+
+            <div class="contactinfoleft">
+                <div class="contactleftdata">
+                    <div class="contactleftdataicon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="contactleftdatainfo">
+                        <h3>Location</h3>
+                        <p>Office No.J Old Custodian Building District Courts, Mirpur</p>
+                    </div>
+                </div>
+                
+                <div class="contactleftdata">
+                    <div class="contactleftdataicon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contactleftdatainfo">
+                        <h2>Phone</h2>
+                        <p>+92 348 1535616</p>
+                    </div>
+                </div>
+                <div class="contactleftdata">
+                    <div class="contactleftdataicon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contactleftdatainfo">
+                        <h3>Email</h3>
+                        <p>arvikamran@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="contactinforight">
+                <div class="contactrightform">
+                    {% if success %}
+                        <p>Thank you for your message. We'll get back to you soon.</p>
+                    {% else %}
+                        <form method="post" action="{% url 'contactus' %}">
+                        {% csrf_token %}
+                        {% for field in form %}
+                            <div class="form-group">
+                                {{ field }}
+                            </div>
+                        {% endfor %}
+                            <button type="submit">Send Message</button>
+                        </form>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+{% endblock content %}

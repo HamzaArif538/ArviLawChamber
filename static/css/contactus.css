@@ -1,0 +1,156 @@
+.contactuscontainer{
+    margin-top: 90px;
+    width: 100%;
+}
+
+.contactuscontainer .teamconttop{
+    background: #b69d74;
+    /* padding: 50px; */
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'EB Garamond', serif; */
+    padding: 30px 0;
+}
+
+.teamconttop .teamtophead{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #121518;
+}
+
+.teamconttop .teamtopinfo{
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.teamconttop .teamtopinfo a{
+    text-decoration: none;
+    color: #121518;
+    transition: 0.4s;
+}
+
+.teamconttop .teamtopinfo a:hover{
+    color: #fff;
+}
+
+.contactuscontainer .contactcontbottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 50px;
+}
+
+.contactcontbottom .contactconthead h1{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.contactcontbottom .contactcontinfo{
+    display: flex;
+    margin: 20px 0;
+}
+
+.contactcontinfo .contactinfoleft{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #121518;
+    padding: 30px;
+    color: #aa9166;
+}
+
+.contactinfoleft .contactleftdata{
+    border: 2px solid #aa9166;
+    margin-bottom: 30px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 87%;
+}
+
+.contactleftdata .contactleftdataicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    color: #aa9166;
+    border: 2px solid #aa9166;
+}
+
+.contactleftdata .contactleftdatainfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    height: 60px;
+}
+
+.contactleftdatainfo h2{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+}
+
+.contactleftdatainfo p{
+    color: #999999;
+    font-size: 16px;
+}
+
+.contactrightform .form-group{
+    margin-bottom: 20px;
+}
+
+.contactinforight .contactrightform{
+    margin: 0 30px;
+}
+
+.contactrightform p{
+    border: 2px solid #aa9166;
+    height: 20px;
+    padding: 12px 18px;
+    background-color: #121518;
+    color: #aa9166;
+}
+
+.contactrightform input{
+    color: #121518;
+    padding: 0 12px;
+    border: 2px solid #121518;
+    width: 35vw;
+    height: 60px;
+}
+
+.contactrightform textarea{
+    color: #121518;
+    padding: 12px;
+    border: 2px solid #121518;
+    width: 35vw;
+}
+
+.contactrightform button {
+    padding: 16px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #aa9166;
+    background-color: #121518;
+    border: 2px solid #aa9166;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contactrightform button:hover{
+    color: #121518;
+    background-color: #aa9166;
+}
