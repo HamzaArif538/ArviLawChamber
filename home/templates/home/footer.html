@@ -30,16 +30,16 @@
                         <a href="/">Home</a>
                     </li>
                     <li class='footer-link'>
-                        <a href="">Our Team</a>
+                        <a href="{% url "team" %}">Our Team</a>
                     </li>
                     <li class='footer-link'>
-                        <a href="">Services</a>
+                        <a href="{% url "services" %}">Services</a>
                     </li>
                     <li class='footer-link'>
-                        <a href="">About Us</a>
+                        <a href="{% url "aboutus" %}">About Us</a>
                     </li>
                     <li class='footer-link'>
-                        <a href="">Contact Us</a>
+                        <a href="{% url "contactus" %}">Contact Us</a>
                     </li>
                 </ul>
         </div>
@@ -50,13 +50,13 @@
         <div class="footer-cont">
             <ul class="footer-lines">
                 <li class="footer-line footer-line-main"><i class="footer-icon fa-solid fa-location-dot"></i><p> Office number J, old custodian building district courts mirpur azad kashmir</p> </li>
-                <li class="footer-line footer-line-main"><i class="footer-icon fa-regular fa-envelope"></i><a href="mailto:">harisarvi@gmail.com</a> </li>
+                <li class="footer-line footer-line-main"><i class="footer-icon fa-regular fa-envelope"></i><a href="mailto:arvikamran@gmail.com">arvikamran@gmail.com</a> </li>
                 <li class="footer-line footer-line-main"><i class="footer-icon fa-solid fa-phone"></i><a href="tel:+923481535616">+92 348 1535616</a> </li>
                 <ul id='social' class="footer-line">
-                    <li><a target='blank' href=" "><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a target='blank' href=" "><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a target='blank' href=" "><i class="fa-brands fa-tiktok"></i></a></li>
-                    <li><a target='blank' href="mailto: abc"><i class="fa-regular fa-envelope"></i></a></li>
+                    {% comment %} <li><a target='blank' href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a target='blank' href=""><i class="fa-brands fa-instagram"></i></a></li> {% endcomment %}
+                    <li><a target='blank' href="https://www.youtube.com/channel/UCa_NzUvZWsOez4eOVX5oFBg "><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a target='blank' href="mailto:arvikamran@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
                 </ul>
             </ul>
         </div>

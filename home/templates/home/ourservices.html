@@ -1,0 +1,197 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "/css/services.css" %}">
+<link rel="stylesheet" href="{% static "/css/team.css" %}">
+<link rel="stylesheet" href="{% static "/css/aboutus.css" %}">
+
+
+<div class="servicescontmain">
+    <div class="servicesmainhead">
+        <h1>Our Services</h1>
+    </div>
+    <div class="servicesmaindata">
+        
+        <div class="servicesdatacont">
+            <div class="dataconttop">
+                <div class="datatopicon">
+                    <i class="fa-solid fa-landmark"></i>
+                </div>
+            </div>
+            <div class="datacontbottom">
+                <h1 class="databottomhead">
+                    Civil Law
+                </h1>
+                <p class="databottominfo">
+                    Resolving disputes between individuals or organizations, civil law encompasses non-criminal legal matters such as contracts and property.
+                </p>
+                <a href="/" class="databottommore">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+        <div class="servicesdatacont">
+            <div class="dataconttop">
+                <div class="datatopicon">
+                    <i class="fa-solid fa-handcuffs"></i>
+                </div>
+            </div>
+            <div class="datacontbottom">
+                <h1 class="databottomhead">
+                    Criminal Law
+                </h1>
+                <p class="databottominfo">
+                    Enforcing justice in cases of wrongdoing, criminal law addresses offenses against public order and safety.
+                </p>
+                <a href="/" class="databottommore">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+        <div class="servicesdatacont">
+            <div class="dataconttop">
+                <div class="datatopicon">
+                    <i class="fa-solid fa-people-roof"></i>
+                </div>
+            </div>
+            <div class="datacontbottom">
+                <h1 class="databottomhead">
+                    Family Law
+                </h1>
+                <p class="databottominfo">
+                    Navigating domestic legal matters, family law resolves issues like divorce, custody, and spousal support with compassion.
+                </p>
+                <a href="/" class="databottommore">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+        <div class="servicesdatacont">
+            <div class="dataconttop">
+                <div class="datatopicon">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+            </div>
+            <div class="datacontbottom">
+                <h1 class="databottomhead">
+                    Corporate Law
+                </h1>
+                <p class="databottominfo">
+                    Guiding businesses through legal complexities, corporate law oversees governance, contracts, mergers, and compliance for organizational success.
+                </p>
+                <a href="/" class="databottommore">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+        <div class="servicesdatacont">
+            <div class="dataconttop">
+                <div class="datatopicon">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+            </div>
+            <div class="datacontbottom">
+                <h1 class="databottomhead">
+                    Labour Law
+                </h1>
+                <p class="databottominfo">
+                    Safeguarding workers' rights, labor law governs employment relationships, ensuring fair treatment, and just practices in the workplace.
+                </p>
+                <a href="/" class="databottommore">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+        <div class="servicesdatacont">
+            <div class="dataconttop">
+                <div class="datatopicon">
+                    <i class="fa-solid fa-city"></i>
+                </div>
+            </div>
+            <div class="datacontbottom">
+                <h1 class="databottomhead">
+                    Real Estate Law
+                </h1>
+                <p class="databottominfo">
+                    Managing property transactions, real estate law facilitates legal aspects of buying, selling, and leasing properties for clients' interests.
+                </p>
+                <a href="/" class="databottommore">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="aboutcontbottom">
+    <div class="bottomaboutteam">
+        <div class="aboutteamleft">
+            <div class="teamleftcont">
+                <img src="{% static "/images/about.jpg" %}" alt="">
+            </div>
+        </div>
+        <div class="aboutteamright">
+            <h1 class="teamrighthead">
+                About Us
+            </h1>
+            <div class="teamrightinfo">
+                Our seasoned team of lawyers at Arvi Law Chamber 
+                shows unparalleled dedication and expertise. 
+                Renowned for their exceptional skills in criminal, 
+                family, civil, labor, corporate, and real estate law, 
+                our attorneys are committed to delivering outstanding 
+                results. <br> <br>
+                With a passion for justice, our legal experts 
+                ensure thorough representation and personalized 
+                solutions, following the highest standards of 
+                professionalism and commitment to our clients' success.
+            </div>
+            <a href='{% url "home" %}' class="teamrightmore">
+                Learn More
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="bottomteammember">
+    <div class="teammembertitle">
+        <h1>Meet Our Expert Lawyers</h1>
+    </div>
+    <div class="teammembercontainer">
+        {% for i in lawyer %}
+            <div class="teammembercont">
+                <div class="membercontpic">
+                    <a href="{% url "lawyer" pk_test=i.id %}">
+                        <img src="{{i.picture.url}}" alt="" class="memberpic">
+                    </a>
+                </div>
+                <div class="membercontbottom">
+                    <div class="memberbottomnum">
+                        <i class="teamnumber fa-solid fa-phone"></i>
+                        <a class="teamnumber" href="tel:+{{i.phoneno}}">+{{i.phoneno}}</a>
+                    </div>
+                    <div class="memberbottomname">
+                        <a href="{% url "lawyer" pk_test=i.id %}">{{i.name}}</a>
+                    </div>
+                    <div class="memberbottomdesign">
+                        <p>{{i.designation}} </p>
+                    </div>
+                </div>
+            </div>
+        
+        {% endfor %}
+    </div>
+</div>
+
+
+<div class="aboutcontbottom">
+
+    <div class="aboutmap">
+        <iframe class='about-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1644.7331967138186!2d73.74740782968837!3d33.14778980692373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391feb90b1f268f3%3A0x8a0b8cebc04d8c11!2sArvi%20law%20chambers!5e0!3m2!1sen!2s!4v1703008261511!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>

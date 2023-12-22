@@ -137,7 +137,7 @@
 .bottomteammember .teammembercontainer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .teammembercontainer .teammembercont{

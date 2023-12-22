@@ -154,3 +154,15 @@
     color: #121518;
     background-color: #aa9166;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .contactcontbottom .contactcontinfo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactcontinfo .contactinforight{
+        margin-top: 20px;
+    }
+}

@@ -228,9 +228,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.serviceconttrust .servicetrustright{
-    background-color: aqua;
-}
 
 .servicetrustright .trustrightpiccont{
     height: 740px;
@@ -243,4 +240,85 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .servicescontainer .teamconttop {
+    height: auto;
+    padding: 20px 0;
+    }
+
+    .teamconttop .teamtophead {
+    font-size: 36px;
+    }
+
+    .teamconttop .teamtopinfo {
+    font-size: 16px;
+    }
+
+    .servicescont .servicescont {
+        margin: 30px 20px;
+        
+    }
+
+    .servicescontmain .servicesmainhead h1 {
+    font-size: 28px;
+    }
+
+    .servicesmaindata .servicesdatacont {
+    width: 100%;
+    margin: 20px 0;
+    }
+
+    .servicesmaindata .servicesdatacont .dataconttop .datatopicon i {
+    margin-bottom: 0;
+    }
+
+    .servicesmaindata .servicesdatacont .datacontbottom .databottommore {
+    padding: 10px;
+    }
+
+    .serviceconttrust{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .serviceconttrust .servicetrustleft .trustlefttop h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    }
+
+    .trustleftcontainer .trustleftdata {
+    margin: 10px 0;
+    flex-direction: column;
+    }
+    .trustdataconticon{
+        margin-top: 50px;
+    }
+    .trustdataconticon i {
+    font-size: 20px;
+    }
+
+    .trustdatacontinfo {
+    width: 100%;
+    margin: 10px 0 50px 0;
+    border: 2px solid #121518;
+    padding: 5px;
+    }
+
+    .trustrightpiccont {
+    height: 600px;
+    width: 90vw;
+    overflow: hidden;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .trustrightpiccont img {
+    height: 600px;
+    width: 330px;
+    object-fit: cover;
+    }
 }
